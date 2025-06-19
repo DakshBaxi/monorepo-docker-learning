@@ -23,6 +23,6 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           context: .
-          file: docker/Dockerfile.backend
+          file: Docker/Dockerfile.backend
           push: true
           tags: dakshbaxi/monorepo-docker-backend:${{ github.sha }}
